@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+header
+{
+	
+	height: 3rem;
+	box-shadow: 0 2px 2px rgba(14,36,49,.15);
+
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 90px;
+	overflow: hidden;
+	border-bottom: white;
+	
+    
+}
+.logo{
+   font-size: 25px;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: rgb(201, 18, 43);
+}
+
+header nav
+{
+	transition: all 0.6s ease-in-out;
+}
+.items
+{
+	text-align: right;
+	margin: 0px;
+	padding: 0 20px;
+	display: flex;
+}
+header nav ul li
+{
+	
+	list-style: none;
+	margin-right: 24px;
+}
+header nav ul li a
+{
+	color: black;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 20px;
+	text-decoration: none;
+	display: inline-block;
+	transition: all 0.3s;
+
+}
+header nav ul li a:hover,
+header nav ul li a.active
+
+{
+	
+    border-bottom: 4px solid rgb(201, 18, 43);
+	color: black;
+	opacity: 0.6s;
+
+
+} 
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+	padding-top: 60px;
+  }
+  
+
+.menu-toggle
+{
+	display: none;
+	color: black;
+	float: right;
+	font-size: 30px;
+	cursor: pointer;
+	border-radius: 5px;
+	
+}/*new*/
+.home .home-content a{
+	display: inline-block;
+	padding: 12px 36px;
+}
+.section-title{
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	
+}
+/*////////*/
+@media (max-width: 830px)
+{
+
+header
+{
+	padding: 0 20px;
+}
+.items{
+	position: fixed;
+	top: 3rem;
+	right:0px;
+	background: rgba(194, 145, 145, 0.555);
+	cursor: pointer;
+	width: 100%;
+	border: 2px;
+	border-radius: 5px;
+	display: block;
+	text-align: center;
+	transform: translateX(100%);
+	transition:0.0s ease-in;
+	
+
+}
+header nav ul li{
+	margin: 0 30px;
+}
+
+header nav ul li a{
+	font-size: 23px;
+	color: white;
+
+}
+header nav ul li a:hover{
+	border-bottom: unset;
+    color:  rgb(201, 18, 43);
+	opacity: 0.6s
+
+}
+.menu-toggle{
+	display: block;
+}
+.active{
+	transform: translateX(0%);
+}
+.home{
+	padding-top: 50px;
+}
+}
+/*end*/
+.bd-grid{
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap:2rem ;
+    width: calc(100%-3rem);
+
+}
+/*home*/
+.home{
+	height: 100vh;
+	
+}
+.home-data{
+	position: relative;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+h2{
+	font-family:  'Poppins', sans-serif;
+}
+.home-name{
+	font-size: 2rem;
+}
+
+
+.socialmedia-icon{
+	padding-top: 25px;
+
+	display: block;
+	justify-content: space-between;
+
+}
+.home-img{
+	width: 457px;
+	bottom: 15%;
+}
+.fa{
+	font-size: 40px;
+	padding: 4px;
+	cursor: pointer;
+}
+.fa-facebook-official{
+	color: darkblue;
+}
+.fa-github{
+	color:black
+}
+.fa-linkedin{
+	color: rgb(13, 93, 241);
+}
+.fa:hover{
+	color:rgb(201, 18, 43);
+	transition: 0.9s;
+	transform: rotateY(360deg);
+	}
+.main-head{
+	color:rgb(201, 18, 43);
+	font-size: 60px;
+	font-weight: 900;
+
+}
+main{
+	margin-top: 66px;
+}
+.btn{
+	margin-top: 14px;
+	padding: 15px;
+	text-decoration: none;
+	font-size:  sans-serif;
+	color: #000;
+	display: inline-block;
+	border: #000;
+	font-weight: bold;
+	border:2px solid black ;
+	border-radius: 4px;
+	font-size: 15px;
+}
+
+
+.btn:hover{
+	border: 1px solid rgb(201, 18, 43) ;
+	background-color:rgb(201, 18, 43) ;
+	transition: 1s;
+
+	
+}
+
+.section{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+.section-title{
+	position: relative;
+	font-size: 2rem;
+	color: rgb(201, 18, 43);
+	font-weight: bold;
+	margin: 20px 0;
+	text-align: center;
+
+}
+
+/*About*/
+.about{
+	
+	align-items: center;
+	text-align: center;
+}
+.about-container{
+	row-gap: 2rem;
+	text-align: center;
+}
+/*skills*/
+.skills{
+	text-align: center;
+}
+.skills-container{
+	row-gap: 2rem;
+	text-align: center;
+
+}
+.skills-text{
+	margin-bottom:2rem ;
+
+}
+.skills_data{
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	position: relative;
+	font-weight: 20px;
+	padding: .5rem 1rem;
+	margin-bottom: 2rem;
+	border-radius: .5rem;
+	box-shadow: 0 4px 25px rgba(14,36,49,.15);
+
+
+}
+.skills-icon{
+	font-size: 2rem;
+	margin-right: 1rem;
+
+
+}
+.skills-name{
+	display: flex;
+	align-items: center;
+}
+.skills-bar{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-color: rgb(201, 18, 43);
+	height: .4rem;
+	border-radius: .5rem;
+	z-index: 10;
+
+
+}
+.skills-html{
+	width: 50%;
+
+}
+.skills-css{
+	width: 30%;
+	
+}
+.skills-js{
+	width: 20%;
+	
+}
+/*education*/
+.Education{
+	text-align: center;
+
+}
+.education-container{
+	row-gap: 2rem;
+
+}
+/*contact*/
+.contact{
+	text-align: center;
+}
+.contact-input{
+	width: 100%;
+	font-size: 15px;
+	font-weight: 20px;
+	margin-bottom: 1rem;
+	padding: 1rem;
+	outline: none;
+	border-radius: .5rem;
+	border: 2px solid black;
+
+}
+.contact-button{
+	display: block;
+	border-radius: .5rem;
+	border: 2px solid black;
+	padding: .5rem;
+	outline: none;
+	color: white;
+	background: rgb(201, 18, 43);
+	font-size: 20px;
+	cursor: pointer;
+	margin-left: auto;
+	margin-bottom: 1rem;
+}
+/*footer*/
+.footer{
+	background-color:rgba(194, 145, 145, 0.555) ;
+	text-align: center;
+	font-size: 15px;
+	padding: 2rem 0;
+
+}
+.footer-title{
+	font-size: 2rem;
+	font-family:' 'Poppins', sans-serif';
+	margin-bottom: 2rem;
+
+}
+.footer-soical{
+	margin-bottom: .5rem;
+	color: black;
+
+}
+.footer-icon{
+	font-size: 1.5rem;
+	margin: 0 1rem;
+}
+/*media query*/
+@media screen and  (min-width:830px){
+	body{
+		margin: 0;
+	}
+	.section{
+		padding-top:4rem ;
+		padding-bottom: 3rem;
+	}
+	.home{
+		height: 100vh;
+
+	}
+	.Education{
+	text-align: center;
+
+}
+	.home-data{
+		position: absolute;
+
+		align-items: center;
+		top: 50%;
+		left: 30%;
+		transform: translate(-50%,-50%);
+		
+		align-self: flex-end;
+
+	}
+
+	.about-container{
+		grid-template-columns: repeat(2,1fr);
+		align-items: center;
+		text-align: initial;
+	}
+	.education-container, .skills-container{
+		grid-template-columns: repeat(3,1fr);
+		grid-template-rows: repeat(2,1fr);
+		column-gap:2rem;
+
+	}
+	.contact-form{
+		width: 360px;
+
+	}
+	.contact-container{
+		justify-items: center;
+
+	}
+}
+@media screen and (min-width: 1024px) {
+	.bd-grid{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	body{
+		margin: 0;
+	}
+	.section{
+		padding-top:4rem ;
+		padding-bottom: 3rem;
+	}
+	.home{
+		height: 100vh;
+
+	}
+	.Education{
+	text-align: center;
+
+}
+	.home-data{
+		position: absolute;
+
+		align-items: center;
+		top: 50%;
+		left: 30%;
+		transform: translate(-50%,-50%);
+		
+		align-self: flex-end;
+
+	}
+
+	.about-container{
+		grid-template-columns: repeat(2,1fr);
+		align-items: center;
+		text-align: initial;
+	}
+	.education-container, .skills-container{
+		grid-template-columns: repeat(3,1fr);
+		grid-template-rows: repeat(2,1fr);
+		column-gap:2rem;
+
+	}
+	.contact-form{
+		width: 360px;
+
+	}
+	.contact-container{
+		justify-items: center;
+
+	}
+	
+}
+
+
